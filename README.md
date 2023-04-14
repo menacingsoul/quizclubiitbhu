@@ -1,1 +1,1 @@
-<img src=""bg.jpg>
+Quiz Club IIT BHU
