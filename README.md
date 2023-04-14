@@ -1,41 +1,36 @@
 ## Debugit 2023 - Quiz Club Website
-![Website Preview](./screenshot(23).png "Quiz Club IIT BHU")
+![Website Preview](Screenshot%20(23).png "Quiz Club IIT BHU")
 
 ## Introduction
-Who hasn't played the infamous Snake Game?! This is an attempt to replicate the same classic "Nokia" phone game, but with better customizations (as each player has his own aesthetic choices) and a variety of never-seen-before boards that will challenge even the best of players.
-
-## How to run the game?
-You can either run the game online at [Revenge of the Snake](https://eshaanagg.github.io/Debugit_2022/index.html) or you can also clone this repository and then run `index.html` in your web browser. No need for any fancy installations!
+Quiz Club is one of the prominent clubs of IIT BHU. This website is designed to host students intrested in quizzing on behalf of Quiz club IIT BHU.
 
 ## Tech Stack Used
   - HTML to provide the skeleton for the web-page.
   - CSS to provide the skin and visual appeal.
-  - Javascript to provide the brain.
-  - Bootstrap to make the interface prettier.
+  - Javascript to fetch the practice questions using API from opendb.com
 
 ## Features
 
-- The Game (Duhhh)
-   - Use the `arrow keys` or `WASD keys` to jump right into the game.
-- Customizations
-   - Play the game in 4 modes - `Easy`, `Medium`, `Difficult` and `Impossible`.
-   - Change the music playback settings.
-   - Boundaries can be treated as being `connected` or `standalone` to play similar, yet drastically different versions of the same game.
-   - Change the layout of the board that you are playing on. By default you get the `Classic` square grid and the `Imperfect Diamond` grid. 
-   - Every colour of the game layout is customizable! Choose your own colours for cells, snake and food to create a version perfect for you!
+- The Navigation Bar
+   - Use the `navigation button` to jump into different sections of the website
+- Differennt Sections
+   - Practice Section designed to host practice questions.
+   - Leaderboard Section designed to host top performing players (not functional now).
+   - Live Quiz section to let the club conduct live quizzes from its own website (not functional now).
 
-## Creating Your Own Grid
-   - Go to Game Layout option and choose the last card.
-   - You can design your own grid by simply which cells you want in the grid to be active, and which to be inactive.
-   - `Note` : The first and last row (and column) of the grid must always be inactive. Unlike you, our reptile friends do have some limits.
-   - You can enter a Name, Description and URL to the cover image of the board you are making.
-   - In case the URL is invalid, a default "Invalid Image" would be displayed.
-
+## Practice Section
+   - ![Website Preview](Screenshot%20(24).png "Practice Questions")
+   - Go to practice section and click `Practice Now>>` button.
+   - A new webpage will open containing `10 questions` from different categories.
+   -After attemptiong all the questions final score is displayed along with restart quiz button.
+ 
 ## Scope and Improvements
-   - Each board is currently stored as a JSON string in the `LocalStorage` of the users' browser so that they can access their boards over multiple sessions. Adding a simple database connectivity would allow these to be stored, and can be made available to other users too!
-   - Designing an Arcade Mode in which different levels consist of different boards and aim to reach different scores.
+   - Add difficulty and choose category option in practice now webpage.
+   - Create a firebase authentication to register users.
+   - Create a leaderboard of users.
+   - redirect users after entering live quiz code in live quiz section to Live Quiz conducting websites.
   
 ## Video Demonstration
-[Video](./VideoDemonstration.mp4)
+[Video](https://drive.google.com/file/d/14xDkJBNgchcoaTcp-rioUvP-RhItWOy_/view?usp=sharing)
 
-`Note` : Due to some bug in the recording software, the color picker wasn't captured in the video around the 1:30 minute mark. 
+
