@@ -92,7 +92,7 @@ ul{
 		font-size: 15px;
 	}
   }
-  @media(max-width: 410px){
+  @media(max-width: 425px){
 	.footer-col2 .social-links
 	{
 		font-size: 15px;
