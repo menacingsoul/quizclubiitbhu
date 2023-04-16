@@ -17,6 +17,7 @@ Quiz Club is one of the prominent clubs of IIT BHU. This website is designed to 
    - Practice Section designed to host practice questions.
    - Leaderboard Section designed to host top performing players (not functional now).
    - Live Quiz section to let the club conduct live quizzes from its own website (not functional now).
+   - Login and signup pages for users.
 
 ## Practice Section
    - ![Website Preview](Screenshot%20(24).png "Practice Questions")
@@ -32,5 +33,8 @@ Quiz Club is one of the prominent clubs of IIT BHU. This website is designed to 
   
 ## Video Demonstration
 [Video](https://drive.google.com/file/d/14xDkJBNgchcoaTcp-rioUvP-RhItWOy_/view?usp=sharing)
+
+## Deployment link 
+[Website](https://menacingsoul.github.io/quizclubiitbhu/)
 
 
