@@ -32,7 +32,7 @@ Quiz Club is one of the prominent clubs of IIT BHU. This website is designed to 
    - redirect users after entering live quiz code in live quiz section to Live Quiz conducting websites.
   
 ## Video Demonstration
-[Video](https://drive.google.com/file/d/14xDkJBNgchcoaTcp-rioUvP-RhItWOy_/view?usp=sharing)
+[Video](https://drive.google.com/file/d/1kCidR1o257z9l4os4WknMdrCP7EUr5hh/view?usp=sharing)
 
 ## Deployment link 
 [Website](https://menacingsoul.github.io/quizclubiitbhu/)
