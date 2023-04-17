@@ -10,7 +10,10 @@ Quiz Club is one of the prominent clubs of IIT BHU. This website is designed to 
   - Javascript to fetch the practice questions using API from opendb.com
 
 ## Features
-
+- Responsiveness
+  - The webiste is fully responsive
+![Website Preview](responsive.png "Responsive on all screen sizes")
+  
 - The Navigation Bar
    - Use the `navigation button` to jump into different sections of the website
 - Differennt Sections
@@ -20,10 +23,10 @@ Quiz Club is one of the prominent clubs of IIT BHU. This website is designed to 
    - Login and signup pages for users.
 
 ## Practice Section
-   - ![Website Preview](Screenshot%20(24).png "Practice Questions")
+![Website Preview](Screenshot%20(24).png "Practice Questions")
    - Go to practice section and click `Practice Now>>` button.
    - A new webpage will open containing `10 questions` from different categories.
-   -After attemptiong all the questions final score is displayed along with restart quiz button.
+   -After attemptiong all the questions final score is displayed along with `Play Again!` button.
  
 ## Scope and Improvements
    - Add difficulty and choose category option in practice now webpage.
