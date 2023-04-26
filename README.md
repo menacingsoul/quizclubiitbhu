@@ -11,16 +11,16 @@ Quiz Club is one of the prominent clubs of IIT BHU. This website is designed to 
 
 ## Features
 - Responsiveness
-  - The webiste is fully responsive
+  - The website is fully responsive
 ![Website Preview](responsive.png "Responsive on all screen sizes")
   
 - The Navigation Bar
    - Use the `navigation button` to jump into different sections of the website
-- Differennt Sections
+- Different Sections
    - Practice Section designed to host practice questions.
    - Leaderboard Section designed to host top performing players (not functional now).
    - Live Quiz section to let the club conduct live quizzes from its own website (not functional now).
-   - Login and signup pages for users.
+   - Login and signup for users.
 
 ## Practice Section
 ![Website Preview](Screenshot%20(24).png "Practice Questions")
