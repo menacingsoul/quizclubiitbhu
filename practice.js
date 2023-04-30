@@ -1,16 +1,15 @@
-const _question = document.getElementById('question');
-const _options = document.querySelector('.quiz-options');
-const _checkBtn = document.getElementById('check-answer');
-const _playAgainBtn = document.getElementById('play-again');
-const _result = document.getElementById('result');
-const _correctScore = document.getElementById('correct-score');
-const _totalQuestion = document.getElementById('total-question');
+let sawal = document.getElementById('question');
+let _options = document.querySelector('.quiz-options');
+let _checkBtn = document.getElementById('check-answer');
+let _playAgainBtn = document.getElementById('play-again');
+let _result = document.getElementById('result');
+let correctno = document.getElementById('correct-score');
+let _totalQuestion = document.getElementById('total-question');
 
 let correctAnswer = "", correctScore = askedCount = 0, totalQuestion = 10;
 
-
 async function loadQuestion(){
-    const APIUrl = 'https://opentdb.com/api.php?amount=10&difficulty=medium&type=multiple';
+    const APIUrl = 'https://opentdb.com/api.php?amount='+totalQuestion+'&difficulty=medium&type=multiple';
     const result = await fetch(`${APIUrl}`)
     const data = await result.json();
     _result.innerHTML = "";
@@ -27,9 +26,8 @@ document.addEventListener('DOMContentLoaded', function(){
     loadQuestion();
     eventListeners();
     _totalQuestion.textContent = totalQuestion;
-    _correctScore.textContent = correctScore;
+    
 });
-
 
 
 function showQuestion(data){
@@ -38,10 +36,9 @@ function showQuestion(data){
     let incorrectAnswer = data.incorrect_answers;
     let optionsList = incorrectAnswer;
     optionsList.splice(Math.floor(Math.random() * (incorrectAnswer.length + 1)), 0, correctAnswer);
+    correctno.innerHTML= `${askedCount+1}`;
     
-
-    
-    _question.innerHTML = `${data.question} <br> <span class = "category"> ${data.category} </span>`;
+    sawal.innerHTML = `${data.question} <br> <span class = "category"> ${data.category} </span>`;
     _options.innerHTML = `
         ${optionsList.map((option, index) => `
             <li> ${index + 1}. <span>${option}</span> </li>
@@ -82,7 +79,6 @@ function checkAnswer(){
     }
 }
 
-
 function HTMLDecode(textString) {
     let doc = new DOMParser().parseFromString(textString, "text/html");
     return doc.documentElement.textContent;
@@ -110,9 +106,8 @@ function checkCount(){
 
 function setCount(){
     _totalQuestion.textContent = totalQuestion;
-    _correctScore.textContent = correctScore;
+   
 }
-
 
 function restartQuiz(){
     correctScore = askedCount = 0;
